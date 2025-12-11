@@ -843,7 +843,7 @@ ol {
 /*---------------------
   Call To Active
 -----------------------*/
-.callto {
+/* .callto {
   padding-top: 130px;
 }
 .callto.sp__callto {
@@ -875,7 +875,57 @@ ol {
   text-transform: uppercase;
   display: inline-block;
   padding: 14px 32px 12px;
+} */
+
+
+.callto.set-bg::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.45); /* adjust darkness */
+  z-index: 1;
 }
+
+.callto {
+  padding-top: 130px;
+  padding-bottom: 130px;
+  position: relative;
+}
+
+.callto.set-bg {
+  background-size: cover;
+  background-position: center center; /* IMPORTANT: centers the image */
+  background-repeat: no-repeat;
+}
+
+.callto__text {
+  position: relative;
+  z-index: 2;
+}
+
+.callto__text h2 {
+  color: #ffffff;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 55px;
+  margin-bottom: 22px;
+}
+
+.callto__text a {
+  color: #ffffff;
+  background: #00bfe7;
+  font-size: 15px;
+  font-weight: 700;
+  font-family: "Play", sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 14px 32px 12px;
+}
+
 
 /*---------------------
   Footer
