@@ -1381,6 +1381,10 @@ ol {
   color: #adadad;
   display: block;
 }
+.logodesign img{
+  width: 100%;
+  max-width: 200px;
+}
 
 .pagination__option {
   text-align: center;
