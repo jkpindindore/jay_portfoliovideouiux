@@ -2036,6 +2036,9 @@ ol {
   font-size: 1em;
   }
 
+.header__logo {
+    max-width: 252px;
+}
 
   .counter__item {
     -webkit-transform: rotate(0);
